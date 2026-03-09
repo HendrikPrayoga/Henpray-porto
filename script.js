@@ -34,6 +34,23 @@ function toggleSertifikat(btn) {
   }
 }
 
+function togglePortfolio(btn) {
+  const extra = document.getElementById("portfolio-extra");
+  const expanded = btn.getAttribute("aria-expanded") === "true";
+  if (expanded) {
+    extra.hidden = true;
+    btn.setAttribute("aria-expanded", "false");
+    btn.querySelector(".sertif-toggle-label").textContent =
+      "Lihat Semua Project";
+    btn.querySelector(".sertif-toggle-count").textContent = "7 lainnya";
+  } else {
+    extra.hidden = false;
+    btn.setAttribute("aria-expanded", "true");
+    btn.querySelector(".sertif-toggle-label").textContent = "Sembunyikan";
+    btn.querySelector(".sertif-toggle-count").textContent = "";
+  }
+}
+
 const header = document.querySelector("header");
 const navMenu = document.getElementById("nav-links");
 const navLinks = document.querySelectorAll(".nav-link");

@@ -1490,7 +1490,8 @@ body[data-theme="light"] .contact {
   display: contents;
 }
 
-.sertifikat-extra[hidden] {
+.sertifikat-extra[hidden],
+.portfolio-extra[hidden] {
   display: none;
 }
 
@@ -1930,6 +1931,20 @@ body[data-theme="light"] .contact {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.75rem;
   align-items: stretch;
+}
+
+.portfolio-extra {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+  align-items: stretch;
+  margin-top: 1.75rem;
+}
+
+.portfolio-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .service-card,
