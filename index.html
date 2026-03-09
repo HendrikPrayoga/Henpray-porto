@@ -1,0 +1,2751 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="page-loader" aria-hidden="true">
+      <div class="loader-inner">
+        <div class="loader-logo">Henpray.</div>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+      </div>
+    </div>
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <header>
+      <div class="navbar">
+        <div class="logo">Henpray.</div>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="bx bx-menu"></i>
+        </button>
+        <nav>
+          <ul id="nav-links">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="bx bx-moon"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-particles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-left reveal">
+            <p class="hero-intro">HELLO, <span>I AM</span></p>
+            <h1>HENDRIK PRAYOGA</h1>
+            <p class="hero-role" id="hero-typed"></p>
+            <div class="hero-actions">
+              <div class="socials" aria-label="Social media links">
+                <a
+                  href="https://www.linkedin.com/in/hendrik-prayoga-94229b252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/hendrikprygaa_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a
+                  href="https://www.tiktok.com/@celoboy28"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                  ><i class="bx bxl-tiktok"></i
+                ></a>
+                <a
+                  href="https://x.com/henpray14"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                  ><span class="x-icon">𝕏</span></a
+                >
+              </div>
+              <div class="hero-cta">
+                <a class="btn btn-primary" href="#" download>
+                  Download CV <i class="bx bx-download"></i>
+                </a>
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/hendrikprayoga"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub Profile <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image reveal">
+            <div class="hero-ring" aria-hidden="true">
+              <div class="rotating-text">
+                <svg
+                  viewBox="0 0 200 200"
+                  class="rotating-circle"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <defs>
+                    <path
+                      id="text-circle"
+                      d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"
+                    />
+                  </defs>
+                  <text>
+                    <textPath xlink:href="#text-circle" startOffset="5%">
+                      · Web Developer · Data Analyst · Web Designer · Data
+                      Scientist ·
+                    </textPath>
+                  </text>
+                </svg>
+                <span class="circle-icon"><i class="bx bx-camera"></i></span>
+              </div>
+            </div>
+            <img
+              src="Aset/Foto.JPG"
+              alt="Featured portfolio portrait"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="section-heading reveal">
+          <span class="badge">About Me</span>
+          <h2>Passion Meets Purpose</h2>
+          <p>
+            Menggabungkan data, desain, dan teknologi untuk membangun solusi
+            digital yang berdampak nyata.
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="about-highlight reveal">
+            <div class="about-media" aria-label="Foto Hendrik Prayoga">
+              <img
+                src="Aset/Foto.JPG"
+                alt="Potret Hendrik Prayoga"
+                loading="lazy"
+              />
+            </div>
+            <div class="about-copy">
+              <span class="badge badge-inline">S.Kom — Teknik Informatika</span>
+              <h3>Hendrik Prayoga</h3>
+              <p>
+                Lulusan Teknik Informatika yang tertarik pada persimpangan
+                antara data, teknologi, dan desain. Saya menikmati proses
+                membangun sesuatu dari nol — mulai dari memahami masalah,
+                mengolah data, hingga mewujudkannya menjadi produk yang
+                benar-benar bisa dipakai.
+              </p>
+              <p>
+                Selama kuliah saya aktif mengerjakan berbagai project nyata di
+                bidang web development, data science, dan machine learning. Saya
+                percaya bahwa hasil terbaik lahir dari kolaborasi yang baik dan
+                keinginan untuk terus belajar.
+              </p>
+              <div class="profile-tags" aria-label="Peran utama">
+                <span>Data Analyst</span>
+                <span>Data Scientist</span>
+                <span>Machine Learning Engineer</span>
+                <span>Web Developer</span>
+                <span>Web Designer</span>
+                <span>UI Researcher</span>
+              </div>
+              <a class="btn btn-primary" href="#contact">
+                Ajak Kolaborasi <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="about-card education-card reveal">
+            <h3 class="card-section-title">
+              <i class="bx bx-book"></i> Pendidikan
+            </h3>
+            <div class="education-entry">
+              <div class="education-card-header">
+                <div
+                  class="education-icon-wrap education-icon-wrap--logo"
+                  aria-hidden="true"
+                >
+                  <img
+                    src="Aset/Telkom University Logo.png"
+                    alt="Telkom University"
+                  />
+                </div>
+                <div>
+                  <p class="education-label">Perguruan Tinggi</p>
+                  <h3>Telkom University Purwokerto</h3>
+                </div>
+                <span
+                  class="education-status-badge education-status-badge--done"
+                  >Lulus</span
+                >
+              </div>
+              <div class="education-details">
+                <div class="education-detail-item">
+                  <i class="bx bx-book-open"></i>
+                  <span>S1 Teknik Informatika</span>
+                </div>
+                <div class="education-detail-item">
+                  <i class="bx bx-calendar"></i>
+                  <span>September 2022 — Januari 2026</span>
+                </div>
+                <div class="education-detail-item">
+                  <i class="bx bx-map-pin"></i>
+                  <span>Purwokerto, Jawa Tengah</span>
+                </div>
+                <div class="education-detail-item">
+                  <i class="bx bx-star"></i>
+                  <span>IPK 3,83</span>
+                </div>
+              </div>
+            </div>
+            <div class="education-divider" aria-hidden="true"></div>
+            <div class="education-entry">
+              <div class="education-card-header">
+                <div
+                  class="education-icon-wrap education-icon-wrap--secondary education-icon-wrap--logo"
+                  aria-hidden="true"
+                >
+                  <img
+                    src="Aset/logo sma 1 salem.jpg"
+                    alt="SMA Negeri 1 Salem"
+                  />
+                </div>
+                <div>
+                  <p class="education-label">Sekolah Menengah Atas</p>
+                  <h3>SMA Negeri 1 Salem</h3>
+                </div>
+                <span
+                  class="education-status-badge education-status-badge--done"
+                  >Lulus</span
+                >
+              </div>
+              <div class="education-details">
+                <div class="education-detail-item">
+                  <i class="bx bx-book-open"></i>
+                  <span>MIPA</span>
+                </div>
+                <div class="education-detail-item">
+                  <i class="bx bx-calendar"></i>
+                  <span>2019 — 2022</span>
+                </div>
+                <div class="education-detail-item">
+                  <i class="bx bx-map-pin"></i>
+                  <span>Salem, Brebes, Jawa Tengah</span>
+                </div>
+                <div class="education-detail-item">
+                  <i class="bx bx-star"></i>
+                  <span>Rata-rata Ujian Sekolah 85,40</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-card experience-card reveal">
+            <h3 class="card-section-title">
+              <i class="bx bx-briefcase-alt-2"></i> Pengalaman Kerja
+            </h3>
+            <div class="experience-entry">
+              <div class="experience-card-header">
+                <div
+                  class="experience-icon-wrap experience-icon-wrap--logo"
+                  aria-hidden="true"
+                >
+                  <img
+                    src="Aset/diskominfo.jpeg"
+                    alt="Diskominfo Kota Semarang"
+                  />
+                </div>
+                <div>
+                  <p class="education-label">Pengalaman Magang</p>
+                  <h3>Dinas Komunikasi dan Informatika Kota Semarang</h3>
+                </div>
+                <span
+                  class="education-status-badge education-status-badge--done"
+                  >Selesai</span
+                >
+              </div>
+              <div class="education-details">
+                <div class="education-detail-item">
+                  <i class="bx bx-code-alt"></i>
+                  <span>Web Developer</span>
+                </div>
+                <div class="education-detail-item">
+                  <i class="bx bx-calendar"></i>
+                  <span>Juli — Agustus 2025</span>
+                </div>
+                <div class="education-detail-item">
+                  <i class="bx bx-map-pin"></i>
+                  <span>Semarang, Jawa Tengah</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-card kepanitiaan-card reveal">
+            <h3 class="card-section-title">
+              <i class="bx bx-flag"></i> Organisasi &amp; Kepanitiaan
+            </h3>
+            <div class="sertifikat-list">
+              <div class="experience-entry">
+                <div class="experience-card-header">
+                  <div
+                    class="kepanitiaan-icon-wrap kepanitiaan-icon-wrap--logo"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src="Aset/Telkom University Logo.png"
+                      alt="Telkom University"
+                    />
+                  </div>
+                  <div>
+                    <p class="education-label">Kepanitiaan</p>
+                    <h3>Responsif UAS</h3>
+                  </div>
+                  <div class="kepanitiaan-actions">
+                    <span
+                      class="education-status-badge education-status-badge--done"
+                      >Selesai</span
+                    >
+                    <a
+                      class="sertifikat-download kepanitiaan-sertif-btn"
+                      href="Aset/sertifikat/KSertif_ResponsifUAS2024.jpg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Lihat sertifikat Responsif UAS 2023"
+                      ><i class="bx bx-file-blank"></i> Sertifikat</a
+                    >
+                  </div>
+                </div>
+                <div class="education-details">
+                  <div class="education-detail-item">
+                    <i class="bx bx-user-pin"></i>
+                    <span>Penanggung Jawab Acara</span>
+                  </div>
+                  <div class="education-detail-item">
+                    <i class="bx bx-calendar"></i>
+                    <span>Januari 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="education-divider" aria-hidden="true"></div>
+              <div class="experience-entry">
+                <div class="experience-card-header">
+                  <div
+                    class="kepanitiaan-icon-wrap kepanitiaan-icon-wrap--logo"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src="Aset/Telkom University Logo.png"
+                      alt="Telkom University"
+                    />
+                  </div>
+                  <div>
+                    <p class="education-label">Kepanitiaan</p>
+                    <h3>Responsif UTS</h3>
+                  </div>
+                  <div class="kepanitiaan-actions">
+                    <span
+                      class="education-status-badge education-status-badge--done"
+                      >Selesai</span
+                    >
+                    <a
+                      class="sertifikat-download kepanitiaan-sertif-btn"
+                      href="Aset/sertifikat/KSertif_ResponsifUTS2023.jpg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Lihat sertifikat Responsif UTS 2023"
+                      ><i class="bx bx-file-blank"></i> Sertifikat</a
+                    >
+                  </div>
+                </div>
+                <div class="education-details">
+                  <div class="education-detail-item">
+                    <i class="bx bx-user-pin"></i>
+                    <span>Ketua Pelaksana</span>
+                  </div>
+                  <div class="education-detail-item">
+                    <i class="bx bx-calendar"></i>
+                    <span>November 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="education-divider" aria-hidden="true"></div>
+              <div class="experience-entry">
+                <div class="experience-card-header">
+                  <div
+                    class="kepanitiaan-icon-wrap kepanitiaan-icon-wrap--logo"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src="Aset/Telkom University Logo.png"
+                      alt="Welcoming Party Informatics 2023"
+                    />
+                  </div>
+                  <div>
+                    <p class="education-label">Kepanitiaan</p>
+                    <h3>Welcoming Party Informatics 2023</h3>
+                  </div>
+                  <div class="kepanitiaan-actions">
+                    <span
+                      class="education-status-badge education-status-badge--done"
+                      >Selesai</span
+                    >
+                    <a
+                      class="sertifikat-download kepanitiaan-sertif-btn"
+                      href="Aset/sertifikat/Sekretaris_WPI2023.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Lihat sertifikat WPI 2023"
+                      ><i class="bx bx-file-blank"></i> Sertifikat</a
+                    >
+                  </div>
+                </div>
+                <div class="education-details">
+                  <div class="education-detail-item">
+                    <i class="bx bx-user-pin"></i>
+                    <span>Sekretaris</span>
+                  </div>
+                  <div class="education-detail-item">
+                    <i class="bx bx-calendar"></i>
+                    <span>Oktober 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="education-divider" aria-hidden="true"></div>
+              <div class="experience-entry">
+                <div class="experience-card-header">
+                  <div
+                    class="kepanitiaan-icon-wrap kepanitiaan-icon-wrap--logo"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src="Aset/Telkom University Logo.png"
+                      alt="Telkom University"
+                    />
+                  </div>
+                  <div>
+                    <p class="education-label">Kepanitiaan</p>
+                    <h3>UPGRADIF Series</h3>
+                  </div>
+                  <div class="kepanitiaan-actions">
+                    <span
+                      class="education-status-badge education-status-badge--done"
+                      >Selesai</span
+                    >
+                    <a
+                      class="sertifikat-download kepanitiaan-sertif-btn"
+                      href="Aset/sertifikat/KSertif_UPGRADIF2023.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Lihat sertifikat UPGRADIF Series 2023"
+                      ><i class="bx bx-file-blank"></i> Sertifikat</a
+                    >
+                  </div>
+                </div>
+                <div class="education-details">
+                  <div class="education-detail-item">
+                    <i class="bx bx-user-pin"></i>
+                    <span>Staff PDD</span>
+                  </div>
+                  <div class="education-detail-item">
+                    <i class="bx bx-calendar"></i>
+                    <span>12 Agustus 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="education-divider" aria-hidden="true"></div>
+              <div class="experience-entry">
+                <div class="experience-card-header">
+                  <div
+                    class="kepanitiaan-icon-wrap kepanitiaan-icon-wrap--logo"
+                    aria-hidden="true"
+                  >
+                    <img
+                      src="Aset/logo sma 1 salem.jpg"
+                      alt="SMA Negeri 1 Salem"
+                    />
+                  </div>
+                  <div>
+                    <p class="education-label">Kepramukaan</p>
+                    <h3>PRADANA Putra</h3>
+                  </div>
+                  <span
+                    class="education-status-badge education-status-badge--done"
+                    >Selesai</span
+                  >
+                </div>
+                <div class="education-details">
+                  <div class="education-detail-item">
+                    <i class="bx bx-user-pin"></i>
+                    <span>Ketua Penegak</span>
+                  </div>
+                  <div class="education-detail-item">
+                    <i class="bx bx-calendar"></i>
+                    <span>2020 — 2021</span>
+                  </div>
+                </div>
+              </div>
+              <div class="sertifikat-extra" id="kepanitiaan-extra" hidden>
+                <div class="education-divider" aria-hidden="true"></div>
+                <div class="experience-entry">
+                  <div class="experience-card-header">
+                    <div
+                      class="kepanitiaan-icon-wrap kepanitiaan-icon-wrap--logo"
+                      aria-hidden="true"
+                    >
+                      <img
+                        src="Aset/logo sma 1 salem.jpg"
+                        alt="SMA Negeri 1 Salem"
+                      />
+                    </div>
+                    <div>
+                      <p class="education-label">Tonsus / Paskibra</p>
+                      <h3>Cakratar Sagara</h3>
+                    </div>
+                    <span
+                      class="education-status-badge education-status-badge--done"
+                      >Selesai</span
+                    >
+                  </div>
+                  <div class="education-details">
+                    <div class="education-detail-item">
+                      <i class="bx bx-user-pin"></i>
+                      <span>Sie Upacara</span>
+                    </div>
+                    <div class="education-detail-item">
+                      <i class="bx bx-calendar"></i>
+                      <span>2020 — 2021</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="education-divider" aria-hidden="true"></div>
+                <div class="experience-entry">
+                  <div class="experience-card-header">
+                    <div
+                      class="kepanitiaan-icon-wrap kepanitiaan-icon-wrap--logo"
+                      aria-hidden="true"
+                    >
+                      <img
+                        src="Aset/logo sma 1 salem.jpg"
+                        alt="SMA Negeri 1 Salem"
+                      />
+                    </div>
+                    <div>
+                      <p class="education-label">Tonsus / Paskibra</p>
+                      <h3>Cakratar Sagara</h3>
+                    </div>
+                    <span
+                      class="education-status-badge education-status-badge--done"
+                      >Selesai</span
+                    >
+                  </div>
+                  <div class="education-details">
+                    <div class="education-detail-item">
+                      <i class="bx bx-user-pin"></i>
+                      <span>Bendahara</span>
+                    </div>
+                    <div class="education-detail-item">
+                      <i class="bx bx-calendar"></i>
+                      <span>2019 — 2020</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="education-divider" aria-hidden="true"></div>
+                <div class="experience-entry">
+                  <div class="experience-card-header">
+                    <div
+                      class="kepanitiaan-icon-wrap kepanitiaan-icon-wrap--logo"
+                      aria-hidden="true"
+                    >
+                      <img
+                        src="Aset/logo smp 1 salem.png"
+                        alt="SMP Negeri 1 Salem"
+                      />
+                    </div>
+                    <div>
+                      <p class="education-label">Kepramukaan</p>
+                      <h3>PRATAMA Putra</h3>
+                    </div>
+                    <span
+                      class="education-status-badge education-status-badge--done"
+                      >Selesai</span
+                    >
+                  </div>
+                  <div class="education-details">
+                    <div class="education-detail-item">
+                      <i class="bx bx-user-pin"></i>
+                      <span>Ketua Penggalang</span>
+                    </div>
+                    <div class="education-detail-item">
+                      <i class="bx bx-calendar"></i>
+                      <span>2017 — 2018</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="sertifikat-toggle-btn"
+                id="kepanitiaan-toggle-btn"
+                onclick="toggleKepanitiaan(this)"
+                aria-expanded="false"
+              >
+                <span class="sertif-toggle-dots"
+                  ><span></span><span></span><span></span
+                ></span>
+                <span class="sertif-toggle-label">Lihat Semua Organisasi</span>
+                <span class="sertif-toggle-count">3 lainnya</span>
+                <i class="bx bx-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="about-card sertifikat-card reveal">
+            <h3 class="card-section-title">
+              <i class="bx bx-medal"></i> Sertifikat &amp; Piagam
+            </h3>
+            <div class="sertifikat-list">
+              <div class="sertifikat-item">
+                <div class="sertifikat-icon-wrap" aria-hidden="true">
+                  <i class="bx bx-briefcase-alt-2"></i>
+                </div>
+                <div class="sertifikat-info">
+                  <p class="education-label">Magang</p>
+                  <h4>Praktik Kerja Lapangan — Diskominfo Semarang</h4>
+                  <p class="sertifikat-meta">
+                    Peserta &nbsp;·&nbsp; 17 Juli – 20 Agustus 2025
+                  </p>
+                  <p class="sertifikat-meta">
+                    Dinas Komunikasi, Informatika, Statistik dan Persandian Kota
+                    Semarang
+                  </p>
+                </div>
+                <a
+                  class="sertifikat-download"
+                  href="Aset/sertifikat/KSertif_PKL_Diskominfo2025.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Lihat sertifikat PKL Diskominfo Semarang"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="education-divider" aria-hidden="true"></div>
+              <div class="sertifikat-item">
+                <div class="sertifikat-icon-wrap" aria-hidden="true">
+                  <i class="bx bx-microphone"></i>
+                </div>
+                <div class="sertifikat-info">
+                  <p class="education-label">Workshop</p>
+                  <h4>Workshop Public Speaking</h4>
+                  <p class="sertifikat-meta">
+                    Peserta &nbsp;·&nbsp; 26 Juli 2025
+                  </p>
+                  <p class="sertifikat-meta">
+                    KKO PAUD Kota Semarang &amp; Mahasiswa Magang
+                    Diskominfo–UNNES
+                  </p>
+                </div>
+                <a
+                  class="sertifikat-download"
+                  href="Aset/sertifikat/KSertif_WorkshopPublicSpeaking2025.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Lihat sertifikat Workshop Public Speaking 2025"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="education-divider" aria-hidden="true"></div>
+              <div class="sertifikat-item">
+                <div
+                  class="sertifikat-icon-wrap sertifikat-icon-wrap--gold"
+                  aria-hidden="true"
+                >
+                  <i class="bx bx-medal"></i>
+                </div>
+                <div class="sertifikat-info">
+                  <p class="education-label sertifikat-label--gold">Prestasi</p>
+                  <h4>Piagam Penghargaan NSMO 2025</h4>
+                  <p class="sertifikat-meta">
+                    <span class="sertifikat-badge-gold"
+                      >🥇 Medali Emas · Nilai A+</span
+                    >
+                  </p>
+                  <p class="sertifikat-meta">
+                    Bidang Kimia &nbsp;·&nbsp; Olimpiade Siswa — CV. Divya
+                    Cahaya Prestasi
+                  </p>
+                </div>
+                <a
+                  class="sertifikat-download"
+                  href="Aset/sertifikat/Piagam_NSMO2025.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Lihat piagam NSMO 2025"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="education-divider" aria-hidden="true"></div>
+              <div class="sertifikat-item">
+                <div class="sertifikat-icon-wrap" aria-hidden="true">
+                  <i class="bx bx-trophy"></i>
+                </div>
+                <div class="sertifikat-info">
+                  <p class="education-label">Olimpiade</p>
+                  <h4>National Science &amp; Mathematics Olympiad 2025</h4>
+                  <p class="sertifikat-meta">
+                    Peserta &nbsp;·&nbsp; Bidang Kimia &nbsp;·&nbsp; 15–17
+                    Agustus 2025
+                  </p>
+                  <p class="sertifikat-meta">
+                    Olimpiade Siswa — CV. Divya Cahaya Prestasi
+                  </p>
+                </div>
+                <a
+                  class="sertifikat-download"
+                  href="Aset/sertifikat/KSertif_NSMO2025.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Lihat sertifikat NSMO 2025 Kimia"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="education-divider" aria-hidden="true"></div>
+              <div class="sertifikat-item">
+                <div class="sertifikat-icon-wrap" aria-hidden="true">
+                  <i class="bx bx-trophy"></i>
+                </div>
+                <div class="sertifikat-info">
+                  <p class="education-label">Olimpiade</p>
+                  <h4>National Science &amp; Mathematics Olympiad 2025</h4>
+                  <p class="sertifikat-meta">
+                    Peserta &nbsp;·&nbsp; Bidang Bahasa Inggris &nbsp;·&nbsp;
+                    15–17 Agustus 2025
+                  </p>
+                  <p class="sertifikat-meta">
+                    Olimpiade Siswa — CV. Divya Cahaya Prestasi
+                  </p>
+                </div>
+                <a
+                  class="sertifikat-download"
+                  href="Aset/sertifikat/KSertif_NSMO2025_BahasaInggris.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Lihat sertifikat NSMO 2025 Bahasa Inggris"
+                >
+                  <i class="bx bx-link-external"></i>
+                </a>
+              </div>
+              <div class="sertifikat-extra" id="sertifikat-extra" hidden>
+                <div class="education-divider" aria-hidden="true"></div>
+                <div class="sertifikat-item">
+                  <div class="sertifikat-icon-wrap" aria-hidden="true">
+                    <i class="bx bx-trophy"></i>
+                  </div>
+                  <div class="sertifikat-info">
+                    <p class="education-label">Olimpiade</p>
+                    <h4>National Science &amp; Mathematics Olympiad 2025</h4>
+                    <p class="sertifikat-meta">
+                      Peserta &nbsp;·&nbsp; Bidang Matematika &nbsp;·&nbsp;
+                      15–17 Agustus 2025
+                    </p>
+                    <p class="sertifikat-meta">
+                      Olimpiade Siswa — CV. Divya Cahaya Prestasi
+                    </p>
+                  </div>
+                  <a
+                    class="sertifikat-download"
+                    href="Aset/sertifikat/KSertif_NSMO2025_Matematika.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Lihat sertifikat NSMO 2025 Matematika"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+                <div class="education-divider" aria-hidden="true"></div>
+                <div class="sertifikat-item">
+                  <div class="sertifikat-icon-wrap" aria-hidden="true">
+                    <i class="bx bx-bar-chart-alt-2"></i>
+                  </div>
+                  <div class="sertifikat-info">
+                    <p class="education-label">Kursus Online</p>
+                    <h4>Belajar Dasar Visualisasi Data</h4>
+                    <p class="sertifikat-meta">
+                      Lulus &nbsp;·&nbsp; 17 Januari 2025
+                    </p>
+                    <p class="sertifikat-meta">
+                      Dicoding Indonesia &nbsp;·&nbsp; Level Dasar
+                    </p>
+                  </div>
+                  <a
+                    class="sertifikat-download"
+                    href="https://www.dicoding.com/certificates/53XEDW82KPRN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Lihat sertifikat Dicoding Belajar Dasar Visualisasi Data"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+                <div class="education-divider" aria-hidden="true"></div>
+                <div class="sertifikat-item">
+                  <div class="sertifikat-icon-wrap" aria-hidden="true">
+                    <i class="bx bx-chip"></i>
+                  </div>
+                  <div class="sertifikat-info">
+                    <p class="education-label">Kursus Online</p>
+                    <h4>Prompt Design in Vertex AI</h4>
+                    <p class="sertifikat-meta">
+                      Lulus &nbsp;·&nbsp; 12 Februari 2025
+                    </p>
+                    <p class="sertifikat-meta">Google Cloud Skills Boost</p>
+                  </div>
+                  <a
+                    class="sertifikat-download"
+                    href="https://www.skills.google/public_profiles/a1084cc4-9654-4d48-8158-50fe78f0e9b0/badges/13930659"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Lihat badge Google Prompt Design in Vertex AI"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+                <div class="education-divider" aria-hidden="true"></div>
+                <div class="sertifikat-item">
+                  <div class="sertifikat-icon-wrap" aria-hidden="true">
+                    <i class="bx bx-data"></i>
+                  </div>
+                  <div class="sertifikat-info">
+                    <p class="education-label">Kursus Online</p>
+                    <h4>Intro to Data Analytics</h4>
+                    <p class="sertifikat-meta">
+                      Lulus &nbsp;·&nbsp; 21 Juni 2024
+                    </p>
+                    <p class="sertifikat-meta">
+                      RevoU Mini Course &nbsp;·&nbsp; 2-weeks certified online
+                      course
+                    </p>
+                  </div>
+                  <a
+                    class="sertifikat-download"
+                    href="https://certificates.revou.co/hendrik-prayoga-certificate-completion-damc.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Lihat sertifikat RevoU Intro to Data Analytics"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+                <div class="education-divider" aria-hidden="true"></div>
+                <div class="sertifikat-item">
+                  <div class="sertifikat-icon-wrap" aria-hidden="true">
+                    <i class="bx bx-book-reader"></i>
+                  </div>
+                  <div class="sertifikat-info">
+                    <p class="education-label">Pelatihan</p>
+                    <h4>SIRCLE Study Date</h4>
+                    <p class="sertifikat-meta">
+                      Peserta &nbsp;·&nbsp; 19 November 2022 – 13 Januari 2023
+                    </p>
+                    <p class="sertifikat-meta">
+                      Fakultas Informatika — Institut Teknologi Telkom
+                      Purwokerto
+                    </p>
+                  </div>
+                  <a
+                    class="sertifikat-download"
+                    href="Aset/sertifikat/KSertif_SIRCLE2022.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Lihat sertifikat SIRCLE Study Date"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+              <button
+                class="sertifikat-toggle-btn"
+                id="sertifikat-toggle-btn"
+                onclick="toggleSertifikat(this)"
+                aria-expanded="false"
+              >
+                <span class="sertif-toggle-dots"
+                  ><span></span><span></span><span></span
+                ></span>
+                <span class="sertif-toggle-label">Lihat Semua Sertifikat</span>
+                <span class="sertif-toggle-count">5 lainnya</span>
+                <i class="bx bx-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+          <div class="about-card project-health reveal">
+            <h3>Project Snapshot</h3>
+            <p>
+              Rekap project terkini beserta skill stack yang digunakan dari
+              deliverable yang sudah selesai.
+            </p>
+            <div class="stats project-metrics" aria-label="Ringkasan project">
+              <div>
+                <span data-count="9">0</span>
+                Total Projects
+              </div>
+              <div>
+                <span data-count="9">0</span>
+                Selesai
+              </div>
+              <div>
+                <span data-count="0">0</span>
+                On Going
+              </div>
+            </div>
+            <p class="skill-marquee-label">Hard Skills</p>
+            <div class="skill-marquee" aria-label="Hard skills yang digunakan">
+              <div class="skill-track">
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--python"
+                    ><i class="bx bxl-python"></i
+                  ></span>
+                  <span>Python</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--html"
+                    ><i class="bx bxl-html5"></i
+                  ></span>
+                  <span>HTML</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--css"
+                    ><i class="bx bxl-css3"></i
+                  ></span>
+                  <span>CSS</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--js"
+                    ><i class="bx bxl-javascript"></i
+                  ></span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--figma"
+                    ><i class="bx bxl-figma"></i
+                  ></span>
+                  <span>Figma</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--excel"
+                    ><i class="bx bx-table"></i
+                  ></span>
+                  <span>Excel</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--streamlit"
+                    ><i class="bx bx-bar-chart-alt-2"></i
+                  ></span>
+                  <span>Streamlit</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--data"
+                    ><i class="bx bx-line-chart"></i
+                  ></span>
+                  <span>Data Analisis</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--sistem"
+                    ><i class="bx bx-search-alt-2"></i
+                  ></span>
+                  <span>Analisis Sistem</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--github"
+                    ><i class="bx bxl-github"></i
+                  ></span>
+                  <span>GitHub</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--nextjs"
+                    ><i class="bx bxl-react"></i
+                  ></span>
+                  <span>Next.js</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--supabase"
+                    ><i class="bx bx-data"></i
+                  ></span>
+                  <span>Supabase</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--vscode"
+                    ><i class="bx bxl-visual-studio"></i
+                  ></span>
+                  <span>VSCode</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--colab"
+                    ><i class="bx bx-cube"></i
+                  ></span>
+                  <span>Google Colab</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--ml"
+                    ><i class="bx bx-brain"></i
+                  ></span>
+                  <span>Machine Learning</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--qgis"
+                    ><i class="bx bx-map-alt"></i
+                  ></span>
+                  <span>QGIS</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--jupyter"
+                    ><i class="bx bx-book-reader"></i
+                  ></span>
+                  <span>Jupyter Notebook</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--word"
+                    ><i class="bx bx-file"></i
+                  ></span>
+                  <span>Word</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--ppt"
+                    ><i class="bx bx-slideshow"></i
+                  ></span>
+                  <span>PowerPoint</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--canva"
+                    ><i class="bx bx-palette"></i
+                  ></span>
+                  <span>Canva</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--sql"
+                    ><i class="bx bx-data"></i
+                  ></span>
+                  <span>SQL</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--mysql"
+                    ><i class="bx bxl-meta"></i
+                  ></span>
+                  <span>MySQL</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--java"
+                    ><i class="bx bxl-java"></i
+                  ></span>
+                  <span>Java</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--laravel"
+                    ><i class="bx bx-code-curly"></i
+                  ></span>
+                  <span>Laravel</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--picsart"
+                    ><i class="bx bx-image-add"></i
+                  ></span>
+                  <span>PicsArt</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--capcut"
+                    ><i class="bx bx-video"></i
+                  ></span>
+                  <span>CapCut</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--xampp"
+                    ><i class="bx bx-server"></i
+                  ></span>
+                  <span>XAMPP</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--python"
+                    ><i class="bx bxl-python"></i
+                  ></span>
+                  <span>Python</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--html"
+                    ><i class="bx bxl-html5"></i
+                  ></span>
+                  <span>HTML</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--css"
+                    ><i class="bx bxl-css3"></i
+                  ></span>
+                  <span>CSS</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--js"
+                    ><i class="bx bxl-javascript"></i
+                  ></span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--figma"
+                    ><i class="bx bxl-figma"></i
+                  ></span>
+                  <span>Figma</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--excel"
+                    ><i class="bx bx-table"></i
+                  ></span>
+                  <span>Excel</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--streamlit"
+                    ><i class="bx bx-bar-chart-alt-2"></i
+                  ></span>
+                  <span>Streamlit</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--data"
+                    ><i class="bx bx-line-chart"></i
+                  ></span>
+                  <span>Data Analisis</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--sistem"
+                    ><i class="bx bx-search-alt-2"></i
+                  ></span>
+                  <span>Analisis Sistem</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--github"
+                    ><i class="bx bxl-github"></i
+                  ></span>
+                  <span>GitHub</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--nextjs"
+                    ><i class="bx bxl-react"></i
+                  ></span>
+                  <span>Next.js</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--supabase"
+                    ><i class="bx bx-data"></i
+                  ></span>
+                  <span>Supabase</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--vscode"
+                    ><i class="bx bxl-visual-studio"></i
+                  ></span>
+                  <span>VSCode</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--colab"
+                    ><i class="bx bx-cube"></i
+                  ></span>
+                  <span>Google Colab</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--ml"
+                    ><i class="bx bx-brain"></i
+                  ></span>
+                  <span>Machine Learning</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--qgis"
+                    ><i class="bx bx-map-alt"></i
+                  ></span>
+                  <span>QGIS</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--jupyter"
+                    ><i class="bx bx-book-reader"></i
+                  ></span>
+                  <span>Jupyter Notebook</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--word"
+                    ><i class="bx bx-file"></i
+                  ></span>
+                  <span>Word</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--ppt"
+                    ><i class="bx bx-slideshow"></i
+                  ></span>
+                  <span>PowerPoint</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--canva"
+                    ><i class="bx bx-palette"></i
+                  ></span>
+                  <span>Canva</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--sql"
+                    ><i class="bx bx-data"></i
+                  ></span>
+                  <span>SQL</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--mysql"
+                    ><i class="bx bxl-meta"></i
+                  ></span>
+                  <span>MySQL</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--java"
+                    ><i class="bx bxl-java"></i
+                  ></span>
+                  <span>Java</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--laravel"
+                    ><i class="bx bx-code-curly"></i
+                  ></span>
+                  <span>Laravel</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--picsart"
+                    ><i class="bx bx-image-add"></i
+                  ></span>
+                  <span>PicsArt</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--capcut"
+                    ><i class="bx bx-video"></i
+                  ></span>
+                  <span>CapCut</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--xampp"
+                    ><i class="bx bx-server"></i
+                  ></span>
+                  <span>XAMPP</span>
+                </div>
+              </div>
+            </div>
+            <p class="skill-marquee-label">Soft Skills</p>
+            <div
+              class="skill-marquee skill-marquee--soft"
+              aria-label="Soft skills"
+            >
+              <div class="skill-track">
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--leadership"
+                    ><i class="bx bx-crown"></i
+                  ></span>
+                  <span>Leadership</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--teamwork"
+                    ><i class="bx bx-group"></i
+                  ></span>
+                  <span>Teamwork</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--communication"
+                    ><i class="bx bx-chat"></i
+                  ></span>
+                  <span>Komunikasi</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--problemsolving"
+                    ><i class="bx bx-bulb"></i
+                  ></span>
+                  <span>Problem Solving</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--thinking"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                  <span>Critical Thinking</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--adaptasi"
+                    ><i class="bx bx-refresh"></i
+                  ></span>
+                  <span>Adaptasi</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--timemanage"
+                    ><i class="bx bx-time-five"></i
+                  ></span>
+                  <span>Manajemen Waktu</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--kreativitas"
+                    ><i class="bx bx-paint"></i
+                  ></span>
+                  <span>Kreativitas</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--publicspeaking"
+                    ><i class="bx bx-microphone"></i
+                  ></span>
+                  <span>Public Speaking</span>
+                </div>
+                <div class="skill-logo-item">
+                  <span class="skill-logo-icon skill-logo-icon--kecermatan"
+                    ><i class="bx bx-zoom-in"></i
+                  ></span>
+                  <span>Kecermatan</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--leadership"
+                    ><i class="bx bx-crown"></i
+                  ></span>
+                  <span>Leadership</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--teamwork"
+                    ><i class="bx bx-group"></i
+                  ></span>
+                  <span>Teamwork</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--communication"
+                    ><i class="bx bx-chat"></i
+                  ></span>
+                  <span>Komunikasi</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--problemsolving"
+                    ><i class="bx bx-bulb"></i
+                  ></span>
+                  <span>Problem Solving</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--thinking"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                  <span>Critical Thinking</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--adaptasi"
+                    ><i class="bx bx-refresh"></i
+                  ></span>
+                  <span>Adaptasi</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--timemanage"
+                    ><i class="bx bx-time-five"></i
+                  ></span>
+                  <span>Manajemen Waktu</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--kreativitas"
+                    ><i class="bx bx-paint"></i
+                  ></span>
+                  <span>Kreativitas</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--publicspeaking"
+                    ><i class="bx bx-microphone"></i
+                  ></span>
+                  <span>Public Speaking</span>
+                </div>
+                <div class="skill-logo-item" aria-hidden="true">
+                  <span class="skill-logo-icon skill-logo-icon--kecermatan"
+                    ><i class="bx bx-zoom-in"></i
+                  ></span>
+                  <span>Kecermatan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="section-heading reveal">
+          <span class="badge">Services</span>
+          <h2>What I Do</h2>
+          <p>
+            Solusi berbasis data yang menghubungkan insight, desain, dan
+            teknologi.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <i class="bx bx-line-chart"></i>
+            <h3>Data Analyst</h3>
+            <p>
+              Mengolah raw data menjadi dashboard dan insight prediktif yang
+              langsung menjawab kebutuhan bisnis harian.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <i class="bx bx-brain"></i>
+            <h3>Data Scientist</h3>
+            <p>
+              Membangun model machine learning end-to-end, mulai dari feature
+              engineering sampai deployment ringan.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <i class="bx bx-code-alt"></i>
+            <h3>Web Developer</h3>
+            <p>
+              Mengembangkan aplikasi web responsif berbasis Laravel dan stack
+              modern dengan performa optimal.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <i class="bx bx-devices"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              Mendesain antarmuka Figma yang intuitif dengan alur riset pengguna
+              sampai prototipe interaktif.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="section-heading reveal">
+          <span class="badge">Portfolio</span>
+          <h2>Selected Works</h2>
+          <p>
+            Kurasi project komprehensif yang memadukan software engineering,
+            eksperimen data, dan desain antarmuka siap produksi.
+          </p>
+        </div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80"
+                alt="Mockup antarmuka OrindPOS dalam layar laptop"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Case Study</p>
+                <h3>OrindPOS</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-user-check"></i>
+                <span>System Analyst</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>Analisis Sistem</span>
+              <span>Excel</span>
+              <span>Python</span>
+              <span>GitHub</span>
+              <span>VSCode</span>
+              <span>Google Colab</span>
+              <span>Machine Learning</span>
+              <span>Teamwork</span>
+            </div>
+            <p class="portfolio-description">
+              Sistem POS web untuk vape store dengan arsitektur terstruktur dan
+              otomatisasi data yang menangani transaksi real-time, stok, serta
+              insight penjualan dalam satu dashboard.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-orindpos"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://orindpos.page.gd/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80"
+                alt="Dashboard visualisasi data iklim dengan grafik multiwarna"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Data Viz</p>
+                <h3>Visualisasi Climate Action</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-network-chart"></i>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>Data Analisis</span>
+              <span>Leadership</span>
+              <span>Python</span>
+              <span>Excel</span>
+              <span>GitHub</span>
+              <span>VSCode</span>
+              <span>Google Colab</span>
+              <span>Machine Learning</span>
+              <span>Teamwork</span>
+            </div>
+            <p class="portfolio-description">
+              Aplikasi visualisasi climate action yang menghadirkan grafik tren,
+              peta tematik, serta perbandingan lintas negara untuk menangkap
+              insight iklim secara cepat dan komunikatif.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-climate"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://visualisasidata-climateaction.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80"
+                alt="Antarmuka website sekolah dengan anak-anak belajar"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Education Site</p>
+                <h3>KB-TK Islam Al Fath</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-code-alt"></i>
+                <span>Front End & Design</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>Data Analysis</span>
+              <span>Figma</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>GitHub</span>
+              <span>VSCode</span>
+              <span>Teamwork</span>
+            </div>
+            <p class="portfolio-description">
+              Portal informasi KB-TK Islam Al Fath dengan navigasi intuitif,
+              visual ceria, dan konten program belajar yang mudah dijelajahi
+              orang tua.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-alfath"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://kbtkalfathsemarang.vercel.app/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80"
+                alt="Dashboard rekomendasi anime dengan grafik dan kartu rekomendasi"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Recommender</p>
+                <h3>Anime Recommendation Dashboard</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-slideshow"></i>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>Data Analisis</span>
+              <span>Excel</span>
+              <span>Python</span>
+              <span>Streamlit</span>
+              <span>GitHub</span>
+              <span>VSCode</span>
+              <span>Google Colab</span>
+              <span>Machine Learning</span>
+              <span>Teamwork</span>
+            </div>
+            <p class="portfolio-description">
+              Dashboard Streamlit yang menganalisis preferensi anime dan
+              menampilkan rekomendasi berbasis collaborative & content filtering
+              dalam antarmuka interaktif.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-anime"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://animerecommendationdashboard.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80"
+                alt="Tampilan website pemesanan tiket wisata Maskuy"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Tourism Web</p>
+                <h3>Maskuy</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-code-alt"></i>
+                <span>Front End</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Analisis Sistem</span>
+              <span>GitHub</span>
+              <span>VSCode</span>
+              <span>Teamwork</span>
+            </div>
+            <p class="portfolio-description">
+              Platform pemesanan tiket wisata digital untuk Taman Mas Kemambang
+              yang menghadirkan pengalaman reservasi online yang efisien,
+              nyaman, dan terorganisir bagi para pengunjung.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-maskuy"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/HendrikPrayoga/maskuy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=80"
+                alt="Ilustrasi jaringan optimasi pengiriman logistik e-commerce"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Algorithm</p>
+                <h3>Optimasi Pengiriman Logistik E-Commerce</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-code-alt"></i>
+                <span>Programmer</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>Python</span>
+              <span>Excel</span>
+              <span>GitHub</span>
+              <span>VSCode</span>
+              <span>Google Colab</span>
+              <span>Machine Learning</span>
+              <span>Teamwork</span>
+            </div>
+            <p class="portfolio-description">
+              Implementasi dan komparasi algoritma Dynamic Programming, Branch
+              and Bound, dan Greedy untuk mengoptimalkan rute pengiriman
+              logistik pada e-commerce guna meminimalkan biaya dan waktu
+              distribusi.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-logistik"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/kylaazzahra/CIIMUT_Tubes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80"
+                alt="Dashboard prediksi hasil pertandingan Valorant menggunakan KNN"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Machine Learning</p>
+                <h3>Prediksi Win/Loss Valorant</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-network-chart"></i>
+                <span>Project Manager</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>Python</span>
+              <span>Excel</span>
+              <span>Analisis Sistem</span>
+              <span>GitHub</span>
+              <span>VSCode</span>
+              <span>Google Colab</span>
+              <span>Machine Learning</span>
+              <span>Teamwork</span>
+            </div>
+            <p class="portfolio-description">
+              Implementasi dan evaluasi algoritma K-Nearest Neighbors (KNN)
+              untuk memprediksi hasil pertandingan Valorant berdasarkan data
+              statistik performa pemain.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-valorant-knn"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/HendrikPrayoga/KNN-klasification"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=80"
+                alt="Platform keamanan digital SecuralID dengan antarmuka modern"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Community Platform</p>
+                <h3>SecuralID</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-palette"></i>
+                <span>Front End & Design</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>Figma</span>
+              <span>Next.js</span>
+              <span>Supabase</span>
+              <span>Data Analisis</span>
+              <span>VSCode</span>
+              <span>Teamwork</span>
+            </div>
+            <p class="portfolio-description">
+              Platform digital berbasis komunitas yang menyediakan artikel,
+              konten edukatif, dan informasi keamanan siber terkini untuk
+              meningkatkan literasi dan kesadaran keamanan digital masyarakat
+              Indonesia.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-securalid"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/rifkihariyanto25/securelid"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+          <article class="portfolio-card reveal">
+            <figure class="portfolio-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=900&q=80"
+                alt="Peta kerawanan tanah longsor berbasis GIS dan machine learning"
+                loading="lazy"
+              />
+            </figure>
+            <div class="portfolio-header">
+              <div>
+                <p class="portfolio-label">Tugas Akhir</p>
+                <h3>Pemetaan &amp; Deteksi Kerawanan Tanah Longsor</h3>
+              </div>
+              <div class="portfolio-role" aria-label="Peran pada project">
+                <i class="bx bx-analyse"></i>
+                <span>Lead Researcher</span>
+              </div>
+            </div>
+            <div class="portfolio-skills" aria-label="Keahlian yang digunakan">
+              <span>Python</span>
+              <span>Jupyter Notebook</span>
+              <span>Excel</span>
+              <span>QGIS</span>
+              <span>VSCode</span>
+              <span>Analisis Sistem</span>
+              <span>Google Colab</span>
+              <span>Machine Learning</span>
+            </div>
+            <p class="portfolio-description">
+              Penelitian mengembangkan sistem deteksi kerawanan bencana tanah
+              longsor di Kecamatan Bumiayu menggunakan CNN untuk pemetaan
+              berbasis data spasial raster dan Random Forest untuk deteksi
+              berbasis data atribut lingkungan.
+            </p>
+            <div class="portfolio-cta">
+              <button
+                class="btn btn-secondary portfolio-learn-more"
+                type="button"
+                data-modal-target="modal-ta"
+              >
+                Learn More <i class="bx bx-book-open"></i>
+              </button>
+              <a
+                class="btn btn-primary"
+                href="https://github.com/HendrikPrayoga/TA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Project <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div
+        class="portfolio-modal"
+        id="modal-securalid"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-securalid-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div class="modal-gallery" aria-label="Galeri SecuralID">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80"
+                alt="Antarmuka utama platform SecuralID"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80"
+                alt="Artikel dan konten edukatif keamanan digital"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80"
+                alt="Desain UI/UX platform komunitas keamanan siber"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Community Platform · Front End & Design</p>
+              <h3 id="modal-securalid-title">SecuralID</h3>
+              <p>
+                SecuralID adalah platform digital berbasis komunitas yang
+                dirancang untuk menyediakan artikel, konten edukatif, serta
+                informasi terkini seputar keamanan digital, privasi data, dan
+                tips perlindungan diri di dunia maya. Platform ini hadir sebagai
+                respons atas meningkatnya ancaman siber dan rendahnya literasi
+                keamanan digital di kalangan masyarakat Indonesia.
+              </p>
+              <p>
+                Sebagai Front End & Design, saya bertanggung jawab atas desain
+                antarmuka di Figma mulai dari wireframe hingga prototipe
+                interaktif, serta implementasi front end menggunakan Next.js
+                dengan integrasi Supabase sebagai backend-as-a-service untuk
+                autentikasi pengguna dan manajemen konten komunitas.
+              </p>
+              <ul class="modal-feature-list">
+                <li>
+                  Desain UI/UX berbasis riset pengguna dengan prototipe
+                  interaktif di Figma.
+                </li>
+                <li>
+                  Implementasi front end responsif menggunakan Next.js dengan
+                  performa optimal.
+                </li>
+                <li>
+                  Integrasi Supabase untuk autentikasi, database komunitas, dan
+                  manajemen konten artikel.
+                </li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://github.com/rifkihariyanto25/securelid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lihat di GitHub <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-modal"
+        id="modal-logistik"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-logistik-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div
+              class="modal-gallery"
+              aria-label="Galeri Optimasi Pengiriman Logistik E-Commerce"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+                alt="Jaringan logistik pengiriman e-commerce"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                alt="Visualisasi algoritma optimasi rute"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                alt="Dashboard perbandingan algoritma"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Algorithm · Programmer</p>
+              <h3 id="modal-logistik-title">
+                Optimasi Pengiriman Logistik E-Commerce
+              </h3>
+              <p>
+                Proyek ini mengimplementasikan dan membandingkan tiga pendekatan
+                algoritma — Dynamic Programming, Branch and Bound, serta Greedy
+                — untuk menyelesaikan masalah optimasi rute pengiriman logistik
+                pada platform e-commerce. Fokus utamanya adalah meminimalkan
+                total biaya dan waktu distribusi dari gudang ke berbagai titik
+                pengiriman secara efisien.
+              </p>
+              <p>
+                Sebagai Programmer, saya mengimplementasikan ketiga algoritma
+                dalam Python, melakukan preprocessing data rute dan biaya
+                menggunakan Excel, serta menganalisis perbandingan performa
+                (kompleksitas waktu &amp; ruang) antar algoritma untuk
+                menentukan pendekatan optimal pada berbagai skala kasus.
+              </p>
+              <ul class="modal-feature-list">
+                <li>
+                  Dynamic Programming untuk menyelesaikan subproblem overlapping
+                  pada rute multi-titik pengiriman.
+                </li>
+                <li>
+                  Branch and Bound untuk eksplorasi solusi optimal dengan
+                  pemangkasan ruang pencarian.
+                </li>
+                <li>
+                  Greedy heuristic sebagai solusi cepat berbasis keputusan lokal
+                  terbaik di setiap tahap.
+                </li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://github.com/kylaazzahra/CIIMUT_Tubes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lihat di GitHub <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-modal"
+        id="modal-orindpos"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-orindpos-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div class="modal-gallery" aria-label="Galeri OrindPOS">
+              <img
+                src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80"
+                alt="Dashboard transaksi OrindPOS dalam laptop"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&q=80"
+                alt="Ilustrasi analitik penjualan"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=800&q=80"
+                alt="Tim menguji workflow OrindPOS"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Case Study · System Analyst</p>
+              <h3 id="modal-orindpos-title">OrindPOS</h3>
+              <p>
+                Proyek ini merupakan pengembangan Sistem Point of Sale (POS)
+                berbasis web untuk vape store yang mengintegrasikan pendekatan
+                Software Engineering dan Data Science dalam satu solusi
+                end-to-end. Dari sisi rekayasa perangkat lunak, sistem dirancang
+                menggunakan arsitektur terstruktur (frontend–backend–database)
+                dengan fitur manajemen transaksi real-time, pengelolaan stok,
+                dashboard laporan penjualan, serta role-based access control
+                untuk admin dan kasir.
+              </p>
+              <p>
+                Dari sisi data science, histori transaksi dimanfaatkan sebagai
+                dataset untuk membangun model Machine Learning (Association Rule
+                Learning & Collaborative Filtering) yang menganalisis pola
+                pembelian dan menghadirkan rekomendasi produk otomatis demi
+                mendukung strategi bundling dan peningkatan penjualan.
+              </p>
+              <ul class="modal-feature-list">
+                <li>
+                  Integrasi workflow kasir–admin dengan logging real-time.
+                </li>
+                <li>
+                  Pipeline ETL ringan yang menyiapkan dataset rekomendasi.
+                </li>
+                <li>Evaluasi model berbasis lift chart dan uji A/B promosi.</li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://orindpos.page.gd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kunjungi OrindPOS <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-modal"
+        id="modal-climate"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-climate-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div
+              class="modal-gallery"
+              aria-label="Galeri Visualisasi Climate Action"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                alt="Grafik garis tren emisi global"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+                alt="Peta tematik perubahan iklim"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+                alt="Tim menganalisis data climate action"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Data Visualization · Project Manager</p>
+              <h3 id="modal-climate-title">Visualisasi Climate Action</h3>
+              <p>
+                Proyek Visualisasi Data Climate Action merupakan aplikasi web
+                interaktif yang menyajikan data perubahan iklim dalam bentuk
+                visual intuitif untuk membantu pengguna memahami tren secara
+                cepat, mulai dari grafik garis tren emisi, peta tematik, hingga
+                diagram perbandingan antar-negara maupun periode tertentu.
+              </p>
+              <p>
+                Visualisasi dirancang berdasarkan prinsip effective data
+                storytelling: pemilihan chart, layout, dan interaktivitas
+                diarahkan guna mengungkap pola, outlier, serta insight kunci
+                tanpa menelusuri tabel kompleks. Tahapan kurasinya mencakup
+                pemahaman data, pemilihan teknik visual, dan penyusunan narasi
+                yang komunikatif sesuai kurikulum Visualisasi Data.
+              </p>
+              <ul class="modal-feature-list">
+                <li>Layer interaktif untuk perbandingan emisi antarnegara.</li>
+                <li>
+                  Pipeline Python + Excel untuk pembersihan dan agregasi data.
+                </li>
+                <li>
+                  Komponen chart dinamis dengan filter periode dan kategori.
+                </li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://visualisasidata-climateaction.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Buka Visualisasi <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-modal"
+        id="modal-alfath"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-alfath-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div
+              class="modal-gallery"
+              aria-label="Galeri Website KB-TK Islam Al Fath"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                alt="Beranda website sekolah dengan hero ceria"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+                alt="Ilustrasi program dan fasilitas sekolah"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80"
+                alt="Anak-anak belajar di lingkungan Islami"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Education Website · Front End & Design</p>
+              <h3 id="modal-alfath-title">KB-TK Islam Al Fath Semarang</h3>
+              <p>
+                Selama program magang saya membangun website informatif untuk
+                KB-TK Islam Al Fath guna mengenalkan visi-misi, fasilitas, dan
+                program pembelajaran yang memadukan karakter Islami serta
+                stimulasi kreativitas sejak dini. Struktur konten disusun
+                berlapis agar orang tua dapat menjelajah profil sekolah,
+                kegiatan, dan proses pendaftaran tanpa kebingungan.
+              </p>
+              <p>
+                Saya menangani desain UI sederhana di Figma, implementasi front
+                end responsif dengan HTML, CSS, dan JavaScript, serta
+                pengelolaan konten yang mudah diperbarui oleh tim sekolah.
+                Optimalisasi mobile memastikan orang tua dapat mengakses
+                informasi dari perangkat apapun.
+              </p>
+              <ul class="modal-feature-list">
+                <li>
+                  Navigasi ramah orang tua dengan struktur informasi bertingkat.
+                </li>
+                <li>
+                  Komponen hero dan galeri kegiatan dengan identitas visual
+                  Islami.
+                </li>
+                <li>
+                  Layout responsif yang siap dikembangkan menjadi CMS dinamis.
+                </li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://kbtkalfathsemarang.vercel.app/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Kunjungi Website <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-modal"
+        id="modal-anime"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-anime-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div
+              class="modal-gallery"
+              aria-label="Galeri Anime Recommendation Dashboard"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80"
+                alt="Tampilan rekomendasi anime"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&q=80"
+                alt="Grafik evaluasi performa rekomendasi"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=800&q=80"
+                alt="Tim menganalisis data pengguna"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Recommender System · Project Manager</p>
+              <h3 id="modal-anime-title">Anime Recommendation Dashboard</h3>
+              <p>
+                Dashboard ini menerapkan konsep Sistem Pemberi Rekomendasi untuk
+                menganalisis data anime dan menyarankan judul berdasarkan pola
+                interaksi dan preferensi pengguna. Alur data menggabungkan
+                collaborative filtering dan content-based filtering untuk
+                memprediksi anime relevan bagi setiap profil pengguna.
+              </p>
+              <p>
+                Implementasinya mencakup kurasi data, eksperimen model di
+                Python, evaluasi performa rekomendasi, hingga penyajian insight
+                di antarmuka Streamlit yang mudah dipahami. Proyek ini
+                menerjemahkan teori information filtering ke produk web
+                interaktif siap demo.
+              </p>
+              <ul class="modal-feature-list">
+                <li>
+                  Pipeline rekomendasi end-to-end dengan data rating anime.
+                </li>
+                <li>Filter preferensi yang dapat disesuaikan pengguna.</li>
+                <li>Visualisasi performa model dan alasan rekomendasi.</li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://animerecommendationdashboard.streamlit.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Buka Dashboard <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-modal"
+        id="modal-maskuy"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-maskuy-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div class="modal-gallery" aria-label="Galeri Maskuy">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80"
+                alt="Tampilan beranda website Maskuy"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                alt="Ilustrasi destinasi wisata Taman Mas Kemambang"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"
+                alt="Antarmuka pemesanan tiket wisata online"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Tourism Web · Front End</p>
+              <h3 id="modal-maskuy-title">Maskuy</h3>
+              <p>
+                Perkembangan teknologi digital telah mengubah cara masyarakat
+                memenuhi kebutuhan sehari-hari, termasuk dalam merencanakan
+                perjalanan wisata. Maskuy hadir sebagai platform inovatif yang
+                memberikan solusi digital dalam pemesanan tiket wisata Taman Mas
+                Kemambang, memastikan pengalaman yang lebih nyaman dan
+                terorganisir bagi para pengunjung.
+              </p>
+              <p>
+                Sebagai Front End Developer, saya membangun antarmuka yang
+                responsif dan intuitif menggunakan HTML, CSS, dan JavaScript,
+                serta melakukan analisis sistem untuk memastikan alur pemesanan
+                tiket berjalan efisien dari awal hingga konfirmasi reservasi.
+              </p>
+              <ul class="modal-feature-list">
+                <li>
+                  Antarmuka pemesanan tiket yang responsif dan ramah pengguna.
+                </li>
+                <li>Alur reservasi online yang efisien dan terstruktur.</li>
+                <li>
+                  Integrasi analisis sistem untuk optimasi pengalaman
+                  pengunjung.
+                </li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://github.com/HendrikPrayoga/maskuy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lihat di GitHub <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-modal"
+        id="modal-valorant-knn"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-valorant-knn-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div
+              class="modal-gallery"
+              aria-label="Galeri Prediksi Win/Loss Valorant"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80"
+                alt="Tampilan arena game Valorant"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                alt="Visualisasi algoritma klasifikasi KNN"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                alt="Dashboard evaluasi model prediksi"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Machine Learning · Project Manager</p>
+              <h3 id="modal-valorant-knn-title">Prediksi Win/Loss Valorant</h3>
+              <p>
+                Proyek ini membahas implementasi dan evaluasi algoritma
+                K-Nearest Neighbors (KNN) untuk memprediksi hasil pertandingan
+                Valorant berdasarkan data statistik yang tersedia. Hasil
+                pertandingan seperti kemenangan (Win) atau kekalahan (Loss)
+                merupakan klasifikasi diskrit yang diprediksi dengan
+                mempertimbangkan faktor-faktor yang memengaruhi performa pemain.
+              </p>
+              <p>
+                Sebagai Project Manager, saya mengkoordinasikan alur kerja mulai
+                dari pengumpulan dan pembersihan data statistik pemain
+                menggunakan Python dan Excel, eksperimen tuning parameter K,
+                hingga evaluasi performa model dengan metrik akurasi, precision,
+                dan recall.
+              </p>
+              <ul class="modal-feature-list">
+                <li>
+                  Pipeline preprocessing data statistik pertandingan Valorant.
+                </li>
+                <li>
+                  Tuning parameter K dengan cross-validation untuk akurasi
+                  optimal.
+                </li>
+                <li>
+                  Evaluasi model menggunakan confusion matrix dan metrik
+                  klasifikasi.
+                </li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://github.com/HendrikPrayoga/KNN-klasification"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lihat di GitHub <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-modal"
+        id="modal-ta"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-ta-title"
+        aria-hidden="true"
+      >
+        <div class="modal-content">
+          <button
+            class="modal-close"
+            type="button"
+            aria-label="Tutup dialog"
+            data-modal-close
+          >
+            <i class="bx bx-x"></i>
+          </button>
+          <div class="modal-grid">
+            <div
+              class="modal-gallery"
+              aria-label="Galeri Pemetaan Kerawanan Tanah Longsor"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80"
+                alt="Peta kerawanan longsor berbasis CNN dan Random Forest"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                alt="Visualisasi model machine learning kerawanan bencana"
+                loading="lazy"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                alt="Dashboard evaluasi performa algoritma CNN vs Random Forest"
+                loading="lazy"
+              />
+            </div>
+            <div class="modal-body">
+              <p class="modal-label">Tugas Akhir &middot; Lead Researcher</p>
+              <h3 id="modal-ta-title">
+                Pemetaan &amp; Deteksi Kerawanan Bencana Tanah Longsor
+                Menggunakan CNN dan Random Forest
+              </h3>
+              <p>
+                Penelitian ini mengembangkan sistem deteksi dan pemetaan
+                kerawanan bencana tanah longsor di Kecamatan Bumiayu, Kabupaten
+                Brebes, dengan memanfaatkan dua algoritma machine learning
+                sesuai karakteristik datanya: Convolutional Neural Network (CNN)
+                untuk pemetaan berbasis data spasial raster, dan Random Forest
+                untuk deteksi kerawanan berbasis data atribut spasial &amp;
+                temporal.
+              </p>
+              <p>
+                Sebagai Lead Researcher, saya bertanggung jawab penuh atas
+                seluruh alur penelitian — mulai dari pengumpulan dan
+                preprocessing data GIS menggunakan QGIS dan Excel, implementasi
+                model di Python (Jupyter Notebook &amp; Google Colab), hingga
+                evaluasi dan komparasi performa kedua algoritma. Hasil
+                penelitian diharapkan menjadi dasar sistem peringatan dini dan
+                mitigasi bencana di wilayah rawan longsor.
+              </p>
+              <ul class="modal-feature-list">
+                <li>
+                  CNN untuk segmentasi dan pemetaan zona kerawanan longsor
+                  berbasis citra raster multi-layer.
+                </li>
+                <li>
+                  Random Forest untuk klasifikasi tingkat kerawanan berdasarkan
+                  faktor curah hujan, kemiringan lereng, jenis tanah, dan
+                  tutupan lahan.
+                </li>
+                <li>
+                  Evaluasi komparatif kedua algoritma dengan metrik akurasi,
+                  precision, recall, dan F1-score untuk menentukan pendekatan
+                  terbaik sesuai fungsi analisisnya.
+                </li>
+              </ul>
+              <div class="modal-links">
+                <a
+                  class="btn btn-primary"
+                  href="https://github.com/HendrikPrayoga/TA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Lihat di GitHub <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal-backdrop"
+        id="portfolio-modal-backdrop"
+        aria-hidden="true"
+      ></div>
+
+      <section class="contact" id="contact">
+        <div class="section-heading reveal">
+          <span class="badge">Contact</span>
+          <h2>Let's Collaborate</h2>
+          <p>Have an idea in mind? Tell me everything and let's build it.</p>
+        </div>
+        <div class="contact-grid contact-grid--single">
+          <div class="about-card reveal">
+            <h3>Let's Connect</h3>
+            <p>Hubungi saya langsung atau temukan saya di berbagai platform.</p>
+            <div class="stats">
+              <div>
+                <span><i class="bx bx-envelope"></i></span>
+                hendrikprayoga288@gmail.com
+              </div>
+              <div>
+                <span><i class="bx bx-phone"></i></span>
+                +62 851 5605 2423
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a
+                href="https://www.linkedin.com/in/hendrik-prayoga-94229b252"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-social-item"
+                aria-label="LinkedIn"
+              >
+                <i class="bx bxl-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://github.com/hendrikprayoga"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-social-item"
+                aria-label="GitHub"
+              >
+                <i class="bx bxl-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://www.instagram.com/hendrikprygaa_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-social-item"
+                aria-label="Instagram"
+              >
+                <i class="bx bxl-instagram"></i>
+                <span>Instagram</span>
+              </a>
+              <a
+                href="https://x.com/henpray14"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-social-item"
+                aria-label="X"
+              >
+                <span class="x-icon">𝕏</span>
+                <span>X</span>
+              </a>
+            </div>
+            <div class="contact-cta-row">
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/6285156052423"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp <i class="bx bxl-whatsapp"></i>
+              </a>
+              <a
+                class="btn btn-secondary"
+                href="mailto:hendrikprayoga288@gmail.com"
+              >
+                Email <i class="bx bx-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Hendrik Prayoga — Crafted with purpose.
+    </footer>
+  </body>
+</html>
