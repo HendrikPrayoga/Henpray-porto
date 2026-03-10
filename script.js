@@ -8,7 +8,7 @@ function toggleKepanitiaan(btn) {
     btn.setAttribute("aria-expanded", "false");
     btn.querySelector(".sertif-toggle-label").textContent =
       "Lihat Semua Organisasi";
-    btn.querySelector(".sertif-toggle-count").textContent = "3 lainnya";
+    btn.querySelector(".sertif-toggle-count").textContent = "5 lainnya";
   } else {
     extra.hidden = false;
     btn.setAttribute("aria-expanded", "true");
