@@ -2200,6 +2200,23 @@ body.modal-open {
   justify-content: center;
 }
 
+.contact .stats {
+  margin-top: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact .stats div {
+  min-width: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.contact .stats span {
+  margin-bottom: 0.4rem;
+}
+
 .contact-socials {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2379,6 +2396,10 @@ footer {
 
   .profile-tags {
     justify-content: center;
+  }
+
+  .contact .stats {
+    grid-template-columns: 1fr;
   }
 }
 
