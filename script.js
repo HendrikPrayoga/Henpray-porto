@@ -42,7 +42,7 @@ function togglePortfolio(btn) {
     btn.setAttribute("aria-expanded", "false");
     btn.querySelector(".sertif-toggle-label").textContent =
       "Lihat Semua Project";
-    btn.querySelector(".sertif-toggle-count").textContent = "7 lainnya";
+    btn.querySelector(".sertif-toggle-count").textContent = "8 lainnya";
   } else {
     extra.hidden = false;
     btn.setAttribute("aria-expanded", "true");
@@ -50,6 +50,92 @@ function togglePortfolio(btn) {
     btn.querySelector(".sertif-toggle-count").textContent = "";
   }
 }
+
+function sortPortfolioByTime() {
+  const portfolioSection = document.getElementById("portfolio");
+  const mainGrid = portfolioSection?.querySelector(
+    ".portfolio-grid:not(#portfolio-extra)",
+  );
+  const extraGrid = document.getElementById("portfolio-extra");
+
+  if (!mainGrid || !extraGrid) return;
+
+  const monthMap = {
+    januari: 1,
+    februari: 2,
+    maret: 3,
+    april: 4,
+    mei: 5,
+    juni: 6,
+    juli: 7,
+    agustus: 8,
+    september: 9,
+    oktober: 10,
+    november: 11,
+    desember: 12,
+    jan: 1,
+    feb: 2,
+    mar: 3,
+    apr: 4,
+    jun: 6,
+    jul: 7,
+    agu: 8,
+    sep: 9,
+    okt: 10,
+    nov: 11,
+    des: 12,
+  };
+
+  const parseMonthYear = (raw) => {
+    const text = raw.trim().toLowerCase();
+    if (text.includes("sekarang")) return Number.MAX_SAFE_INTEGER;
+
+    const parts = text.split(/\s+/);
+    const month = monthMap[parts[0]];
+    const year = parseInt(parts[1], 10);
+
+    if (!month || Number.isNaN(year)) return 0;
+    return year * 100 + month;
+  };
+
+  const extractRange = (text) => {
+    const normalized = text.replace(/\s+/g, " ").trim();
+    const pieces = normalized.split(/\s*-\s*/);
+
+    const start = parseMonthYear(pieces[0] || "");
+    const end = parseMonthYear(pieces[1] || pieces[0] || "");
+
+    return { start, end };
+  };
+
+  const cards = [
+    ...mainGrid.querySelectorAll(".portfolio-card"),
+    ...extraGrid.querySelectorAll(".portfolio-card"),
+  ];
+
+  const sorted = cards
+    .map((card, index) => {
+      const timeText =
+        card.querySelector(".portfolio-time span")?.textContent || "";
+      const { start, end } = extractRange(timeText);
+      return { card, index, start, end };
+    })
+    .sort((a, b) => {
+      if (b.end !== a.end) return b.end - a.end;
+      if (b.start !== a.start) return b.start - a.start;
+      return a.index - b.index;
+    });
+
+  sorted.forEach((item, index) => {
+    if (index < 3) {
+      mainGrid.appendChild(item.card);
+    } else {
+      extraGrid.appendChild(item.card);
+    }
+  });
+}
+
+sortPortfolioByTime();
 
 const header = document.querySelector("header");
 const navMenu = document.getElementById("nav-links");
